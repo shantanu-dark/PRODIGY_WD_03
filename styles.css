@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.intro-screen, .game-screen {
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px green;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.player-names {
+    margin-bottom: 20px;
+}
+
+.player-names label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.player-names input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#start-game {
+    background: #4CAF50;
+    color: white;
+}
+
+#start-game:hover {
+    background: #45a049;
+}
+
+#restart-game {
+    background: #f44336;
+    color: white;
+}
+
+#restart-game:hover {
+    background: #e53935;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #333;
+    border: 2px solid #00FF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background: #444;
+}

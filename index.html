@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="intro-screen">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <p>Introduction and Rules:</p>
+        <ul>
+            <li>Two players take turns to mark a 3x3 grid with X or O.</li>
+            <li>The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</li>
+            <li>If all nine squares are filled without a winner, the game ends in a draw.</li>
+        </ul>
+        <div class="player-names">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1" placeholder="Enter Player 1 Name">
+            <label for="player2">Player 2 Name:</label>
+            <input type="text" id="player2" placeholder="Enter Player 2 Name (or leave blank to play against AI)">
+        </div>
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div class="game-screen hidden">
+        <h1>Tic Tac Toe</h1>
+        <h2 id="turn-indicator">Player 1's Turn</h2>
+        <div class="game-board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <button id="restart-game">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
